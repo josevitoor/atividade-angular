@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Você deseja realmente excluir esse dado?</h2>
+<mat-dialog-content>
+  <p>Essa ação nao poderá ser desfeita</p>
+  <p></p
+></mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Não</button>
+  <button mat-button (click)="onDelete()" cdkFocusInitial>Sim</button>
+</mat-dialog-actions>

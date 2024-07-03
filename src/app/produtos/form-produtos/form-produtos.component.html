@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+  <mat-form-field>
+    <input matInput placeholder="Nome" formControlName="nome" />
+  </mat-form-field>
+  <br />
+  <mat-form-field>
+    <input matInput placeholder="Descrição" formControlName="descricao" />
+  </mat-form-field>
+  <br />
+  <button mat-flat-button (click)="onSubmit()">{{ buttonTitle }}</button>
+  <button mat-flat-button (click)="onCancel()">Cancelar</button>
+</form>
